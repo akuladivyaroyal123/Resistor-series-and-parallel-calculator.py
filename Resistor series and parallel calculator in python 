@@ -1,0 +1,21 @@
+# Resistor Series and Parallel Calculator
+
+print("1. Series")
+print("2. Parallel")
+
+choice = int(input("Enter your choice (1 or 2): "))
+
+R1 = float(input("Enter R1 (Ω): "))
+R2 = float(input("Enter R2 (Ω): "))
+R3 = float(input("Enter R3 (Ω): "))
+
+if choice == 1:
+    total = R1 + R2 + R3
+    print("Total Resistance =", total, "Ω")
+
+elif choice == 2:
+    total = 1 / (1/R1 + 1/R2 + 1/R3)
+    print("Total Resistance =", total, "Ω")
+
+else:
+    print("Invalid choice")
